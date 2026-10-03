@@ -183,7 +183,21 @@ class StudentService:
             raise StudentNotFoundError("Student not found.")
 
         merged = students[index].to_dict()
-        merged.update({k: v for k, v in self._clean(changes).items() if k in self.UPDATABLE_FIELDS})
+        cleaned_changes = self._clean(changes)
+
+        valid_changes = {
+            k: v for k, v in cleaned_changes.items()
+            if k in self.UPDATABLE_FIELDS
+        }
+
+        if not valid_changes:
+            self.logger.info(
+                "No changes made to student %s.",
+                students[index].student_id
+            )
+            return students[index]
+
+        merged.update(valid_changes)
 
         errors = validate_student_data(merged, self.min_age, self.max_age)
         if errors:
