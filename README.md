@@ -196,7 +196,15 @@ Alternatively, open a Pull Request on GitHub from the feature branch into `main`
 
 ## Challenges Faced
 
-*(Write your own experience here after completing the project, for example problems you ran into while setting up Git, running the tests, or pushing to GitHub, and how you solved them.)*
+One challenge I faced was learning how to properly use Git and GitHub for the project. I had to learn how to create and work on the feature/student-crud branch, commit changes, push the branch to GitHub, and check the Git status to make sure my files were properly synchronized.
+
+Another challenge was handling the data/students.json file during testing. When I entered student information while running the application, the data file could be changed. I had to learn how to check the file and use Git to restore it when I did not want the test data to be included in the repository.
+
+I also had to make sure that the student update function worked correctly without removing existing information when the user wanted to keep a value. This was handled by allowing the user to press Enter to keep the current value.
+
+Testing the project was another challenge because I needed to make sure that the different functions worked correctly. I used 22 unit tests to check the CRUD operations, validation, search, JSON persistence, error handling, and CSV export. All 22 tests passed successfully.
+
+Another challenge was keeping the README and GitHub repository updated. I had to check the correct branch and make sure that the README on GitHub matched the version of the project I was working on locally.
 
 ## Future Improvements
 
