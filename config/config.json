@@ -1,0 +1,7 @@
+{
+    "app_name": "Student Information System",
+    "data_file": "data/students.json",
+    "log_file": "logs/application.log",
+    "max_age": 100,
+    "min_age": 1
+}

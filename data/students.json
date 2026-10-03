@@ -1,0 +1,15 @@
+[
+    {
+        "student_id": "STU-0001",
+        "first_name": "Juan",
+        "middle_name": "Dela",
+        "last_name": "Cruz",
+        "age": 20,
+        "gender": "Male",
+        "course": "BS Information Technology",
+        "year_level": "2nd Year",
+        "email": "juan.cruz@example.com",
+        "phone": "09123456789",
+        "address": "Binalonan, Pangasinan"
+    }
+]

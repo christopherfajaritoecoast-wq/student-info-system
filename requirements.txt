@@ -1,0 +1,4 @@
+# Student Information System - dependencies
+# No mandatory third-party packages are required.
+# The project uses only the Python 3 standard library
+# (json, os, logging, datetime, pathlib, csv, re, unittest).
